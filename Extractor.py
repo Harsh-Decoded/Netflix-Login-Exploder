@@ -2,7 +2,7 @@
 import re
 
 ########################################################
-##        Change logic accoding to your file          ##
+##        Change logic according to your file         ##
 ########################################################
 
 def extract_credentials(filename):
